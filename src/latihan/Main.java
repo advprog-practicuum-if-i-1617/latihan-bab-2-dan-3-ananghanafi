@@ -5,12 +5,23 @@
  */
 package latihan;
 
+import java.util.Scanner;
+
 /**
  *
  * @author ridho
  */
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hello");
+        Convert konversi = new Convert();
+        Scanner in = new Scanner(System.in);
+        System.out.print("Masukkan angka : ");
+        String angka = in.next();
+        long b = Long.parseLong(angka);
+        String c = konversi.terbilang(b);
+        System.out.println("Konversi = " + c);
     }
+
+
 }
